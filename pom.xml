@@ -22,7 +22,7 @@
 	</parent>
 
 	<dependencies>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-turbine</artifactId>
 			<exclusions>
@@ -31,15 +31,19 @@
 					<artifactId>turbine-core</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency> -->
+		<!-- <dependency>
+			<groupId>com.netflix.turbine</groupId>
+			<artifactId>turbine-core</artifactId>
+			<version>1.0.0</version>
+		</dependency> -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-turbine-amqp</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.netflix.turbine</groupId>
-			<artifactId>turbine-core</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 		
 	</dependencies>
